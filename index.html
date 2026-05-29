@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flutter SDK y Desarrollo Mobile</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <span class="tag">Desarrollo Mobile
+
+      </span>
+      <h1>Flutter SDK </h1>
+      <p>
+        Una introducción clara y práctica a Flutter, Dart, los widgets y la forma
+        en que se construyen aplicaciones móviles modernas.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>¿Por qué aprender Flutter?</h2>
+      <p>
+        Flutter permite crear aplicaciones visualmente atractivas, rápidas y funcionales
+        para diferentes plataformas usando una sola base de código. Para un desarrollador
+        en formación, es una herramienta importante porque combina diseño de interfaces,
+        lógica de programación y buenas prácticas de desarrollo mobile.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>¿Qué es Flutter SDK?</h3>
+        <p>
+          Flutter SDK es un kit de desarrollo de software creado por Google. Su objetivo
+          principal es permitir la creación de aplicaciones para Android, iOS, web y
+          escritorio desde un mismo proyecto. Esto significa que el desarrollador puede
+          escribir gran parte del código una sola vez y adaptarlo a varias plataformas.
+        </p>
+        <p>
+          El SDK incluye herramientas para compilar, ejecutar, depurar y probar aplicaciones.
+          También trae un conjunto amplio de componentes visuales llamados widgets, que
+          facilitan la construcción de interfaces modernas, ordenadas y responsivas.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Desarrollo Mobile</h3>
+        <p>
+          El desarrollo mobile es el proceso de crear aplicaciones para dispositivos móviles
+          como celulares y tabletas. Estas aplicaciones deben ser rápidas, fáciles de usar
+          y adaptarse correctamente a diferentes tamaños de pantalla.
+        </p>
+        <p>
+          En Flutter, el desarrollo mobile se enfoca en construir experiencias visuales
+          fluidas. El programador no solo escribe la lógica de la aplicación, también define
+          cómo se ve cada pantalla, cómo responde al usuario y cómo cambia la interfaz cuando
+          ocurre una acción.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Dart</h3>
+        <p>
+          Dart es el lenguaje de programación utilizado por Flutter. Es un lenguaje moderno,
+          orientado a objetos y diseñado para ser claro, organizado y eficiente. Su sintaxis
+          es fácil de leer, especialmente para quienes ya han trabajado con lenguajes como
+          Java, JavaScript o C#.
+        </p>
+        <p>
+          Con Dart se crean clases, funciones, variables, condiciones y estructuras de datos.
+          En Flutter, Dart se usa tanto para manejar la lógica de la aplicación como para
+          construir la interfaz visual mediante widgets.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Widgets</h3>
+        <p>
+          En Flutter, casi todo es un widget. Un texto, un botón, una imagen, una columna,
+          una fila, una tarjeta o una pantalla completa son widgets. Esta forma de trabajar
+          permite construir interfaces por partes pequeñas y reutilizables.
+        </p>
+        <p>
+          Los widgets se organizan como una estructura en árbol. Un widget puede contener
+          otros widgets, y juntos forman la pantalla que ve el usuario. Esta idea ayuda a
+          mantener el código más ordenado y facilita modificar partes específicas de la
+          interfaz sin afectar toda la aplicación.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>StatelessWidget</h3>
+        <p>
+          StatelessWidget es un tipo de widget que no cambia por sí mismo durante la ejecución
+          de la aplicación. Se utiliza cuando la información que muestra es fija o depende de
+          datos que recibe desde otro lugar.
+        </p>
+        <p>
+          Por ejemplo, un título, una tarjeta informativa o una pantalla que solo muestra
+          contenido estático pueden construirse con StatelessWidget. Es útil cuando no se
+          necesita actualizar la interfaz después de una acción del usuario.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>StatefulWidget</h3>
+        <p>
+          StatefulWidget es un widget que puede cambiar durante la ejecución de la aplicación.
+          Se usa cuando la interfaz debe actualizarse como respuesta a una acción, por ejemplo
+          presionar un botón, cambiar una opción, agregar favoritos o actualizar una lista.
+        </p>
+        <p>
+          Este tipo de widget trabaja con un estado interno. Cuando ese estado cambia, Flutter
+          reconstruye la parte necesaria de la interfaz para mostrar la información actualizada.
+          Por eso es fundamental en aplicaciones interactivas.
+        </p>
+      </article>
+    </section>
+
+    <section class="comparison">
+      <h2>Diferencia entre StatelessWidget y StatefulWidget</h2>
+
+      <div class="table">
+        <div class="row header-row">
+          <span>Concepto</span>
+          <span>StatelessWidget</span>
+          <span>StatefulWidget</span>
+        </div>
+
+        <div class="row">
+          <span>Estado</span>
+          <span>No maneja cambios internos.</span>
+          <span>Sí maneja cambios internos.</span>
+        </div>
+
+        <div class="row">
+          <span>Uso común</span>
+          <span>Textos, títulos, tarjetas simples.</span>
+          <span>Botones dinámicos, formularios, favoritos.</span>
+        </div>
+
+        <div class="row">
+          <span>Interactividad</span>
+          <span>Baja o estática.</span>
+          <span>Alta o dinámica.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+<section class="commands">
+  <h2>Comandos eficientes de Flutter</h2>
+  <p>
+    En Flutter, la terminal es una herramienta clave para crear, ejecutar, analizar
+    y compilar proyectos. Estos comandos ayudan a trabajar de forma más rápida y
+    organizada durante el desarrollo de aplicaciones.
+  </p>
+
+  <div class="command-grid">
+    <div class="command-card">
+      <h3>flutter doctor</h3>
+      <code>flutter doctor</code>
+      <p>Revisa si el entorno de Flutter está instalado correctamente.</p>
+    </div>
+
+    <div class="command-card">
+      <h3>Crear proyecto</h3>
+      <code>flutter create nombre_app</code>
+      <p>Crea un nuevo proyecto Flutter con la estructura inicial.</p>
+    </div>
+
+    <div class="command-card">
+      <h3>Ejecutar app</h3>
+      <code>flutter run</code>
+      <p>Ejecuta la aplicación en un emulador, dispositivo físico o navegador.</p>
+    </div>
+
+    <div class="command-card">
+      <h3>Instalar dependencias</h3>
+      <code>flutter pub get</code>
+      <p>Descarga las dependencias definidas en el archivo pubspec.yaml.</p>
+    </div>
+
+    <div class="command-card">
+      <h3>Analizar código</h3>
+      <code>flutter analyze</code>
+      <p>Detecta errores, advertencias y malas prácticas en el código.</p>
+    </div>
+
+    <div class="command-card">
+      <h3>Compilar para web</h3>
+      <code>flutter build web</code>
+      <p>Genera la versión web optimizada de la aplicación.</p>
+    </div>
+  </div>
+</section>
+  <footer>
+  <p>Autor: Daniel Felipe Ospino Acosta</p>
+  <p>Ficha: 3171084 - ADSO Tecnólogo</p>
+  <p>Fecha: 29 de mayo de 2026</p>
+</footer>
+</body>
+</html>
